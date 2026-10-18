@@ -1,0 +1,12 @@
+# 构建产物
+build/
+
+# 临时分析脚本
+_*.py
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+_commit_msg.tmp
