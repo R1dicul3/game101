@@ -20,7 +20,7 @@ GAMES101《现代计算机图形学入门》(闫令琪)的作业实现与学习�
 
 ## 目录
 
-`@
+```
 game101/
 ├── GAMES101-作业总览.md      # 8 次作业的完整清单、知识点、常见坑
 ├── WSL-速查.md               # WSL/Ubuntu 上手手册
@@ -32,15 +32,25 @@ game101/
 │   ├── demos/                #   Eigen 语法小样
 │   ├── tests/                #   参考实现(自检用)
 │   └── output/               #   渲染结果
-└── tools/env_probe.sh        # WSL 环境探针
-`@
+├── notes/                    # 零散知识点笔记
+│   └── 透视投影-S-T-persp.md  #   投影矩阵三段式 + l/r/b/t 计算
+└── tools/
+    ├── env_probe.sh          # WSL 环境探针
+    └── push.sh               # 提交助手
+```
+
+## 知识笔记
+
+| 笔记 | 内容 |
+|---|---|
+| [透视投影的三段式](notes/透视投影-S-T-persp.md) | P = S · T · persp 三个矩阵的含义与乘法顺序;l / r / b / t 四个边界值的推导;z 行常数陷阱与数值自检 |
 
 ## 环境
 
-`@bash
+```bash
 sudo apt install -y build-essential cmake libeigen3-dev libopencv-dev \
   libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev x11-apps gdb
-`@
+```
 
 | 组件 | 版本 |
 |---|---|
@@ -53,12 +63,12 @@ sudo apt install -y build-essential cmake libeigen3-dev libopencv-dev \
 
 ## 运行
 
-`@bash
+```bash
 cd hw1
 bash run.sh          # 配置 + 编译 + 渲染 36 帧到 output/
 bash run.sh 45       # 只渲染 45 度
 bash run.sh show     # 开窗口播动画(WSLg)
-`@
+```
 
 ## 提交流程
 
