@@ -60,6 +60,15 @@ bash run.sh 45       # 只渲染 45 度
 bash run.sh show     # 开窗口播动画(WSLg)
 `@
 
+## 提交流程
+
+每完成一次作业提交一次,commit 就是学习轨迹:
+
+```bash
+bash hw1/run.sh                      # 先跑通
+bash tools/push.sh "HW2: 光栅化完成"   # 再提交推送
+```
+
 ## 作业记录
 
 ### HW0 —— 环境准备
